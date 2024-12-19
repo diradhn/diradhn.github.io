@@ -1,1 +1,1 @@
-https://diradhn.github.io/
+https://diradhn.github.io/Register.html
