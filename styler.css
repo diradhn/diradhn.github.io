@@ -1,3 +1,14 @@
+body {
+    background: url(bp.jpg) no-repeat center center fixed;
+    background-size: cover; /* Mengubah ukuran latar belakang agar menutupi seluruh halaman */
+    font-family: Verdana, Tahoma, sans-serif;
+    margin: 0; /* Menghapus margin default */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Menyelaraskan konten di tengah */
+    justify-content: center; /* Menyelaraskan konten di tengah */
+    height: 100vh; /* Mengatur tinggi body agar memenuhi viewport */
+}
 fieldset{
     height: fit-content;
 }
@@ -5,63 +16,21 @@ nav{
     text-align: center;
     font-weight:bold;
 }
-body{
-    background: url(bp.jpg) no-repeat;
-    background-size: 480px 700px;
-    background-position: center;
-    background-attachment: fixed;
-    font-family: Verdana, Tahoma, sans-serif;
-}
-.biodata{
+.biodata, .account, .footer {
     width: 400px;
-    height: 734px;
     background: rgba(241, 177, 215, 0.733);
     color: rgb(0, 0, 0);
-    top: 60%;
-    left: 50%;
-    position: absolute;
     box-sizing: border-box;
     padding: 30px;
-    transform: translate(-50%, -50%);
     font-size: 10pt;
     text-align: left;
+    margin: 20px 0; /* Menambahkan margin untuk jarak antar elemen */
 }
 .foo{
     text-align: center;
     font-size: 15pt;
 }
-.next{
-    text-align: center;
-}
-.account{
-    width: 400px;
-    height: 200px;
-    background: rgba(241, 177, 215, 0.733);
-    color: rgb(0, 0, 0);
-    top: 132%;
-    left: 50%;
-    position: absolute;
-    box-sizing: border-box;
-    padding: 30px;
-    transform: translate(-50%, -50%);
-    font-size: 10pt;
-    text-align: left;
-}
-.submit{
-    text-align: center;
-}
-.footer{
-    width: 400px;
-    height: 200px;
-    background: rgba(241, 177, 215, 0.733);
-    color: rgb(0, 0, 0);
-    top: 163.3%;
-    left: 50%;
-    position: absolute;
-    box-sizing: border-box;
-    padding: 30px;
-    transform: translate(-50%, -50%);
-    font-size: 10pt;
+.next, .submit {
     text-align: center;
 }
 #message {
@@ -79,8 +48,7 @@ body{
 }
 .valid {
     color: green;
-}
-  
+} 
 .valid:before {
     position: relative;
     left: -35px;
@@ -94,4 +62,10 @@ body{
     position: relative;
     left: -35px;
     content: "✖";
+}
+/* Media Query untuk Responsivitas */
+@media (max-width: 480px) {
+    .biodata, .account, .footer {
+        width: 90%; /* Mengubah lebar untuk perangkat kecil */
+    }
 }
