@@ -1,215 +1,197 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="author" content="Diaz Ramadhiani(202031252">
-        <meta name="description" content="Ini Merupakan Halaman Web Diaz Ramadhiani">
-        <title>Form Pendaftaran Organisasi</title>
-        <link rel="stylesheet" type="text/css" href="styler.css">
-    </head>
-    <body>
-            <nav>
-            <a href="/home">Home</a>
-            <a href="/about">About</a>
-            <a href="/kontak">Kontak</a>
-            </nav>
-    <form>
-        <section>
-            <div class="biodata">
-            <legend class="foo"><b>FORM OPREC ORGANIZATION</b></legend><br>
-            <table>
-                <tr>
-                    <th align="left">Nama</th>
-                    <td>:</td>
-                    <td><input type="text" name="nama"></td>
-                </tr>
-                <tr>
-                    <th align="left">NIM</th>
-                    <td>:</td>
-                    <td><input type="text" name="nim"></td>
-                </tr>
-                <tr>
-                    <th align="left">Jurusan|Fakultas</th>
-                    <td>:</td>
-                    <td><select>
-                        <option>Teknik Elektro | FKET</option>
-                        <option>Teknik Informatika | FTEN</option>
-                        <option>Teknik Mesin | FTBE</option>
-                        <option>Teknik Sipil | FTIK</option>
-                    </select></td>
-                </tr>
-                <tr>
-                    <th align="left">Kelas</th>
-                    <td>:</td>
-                    <td>
-                        <input type="radio" name="kelas"/>A
-                        <input type="radio" name="kelas"/>B
-                        <input type="radio" name="kelas"/>C<br>
-                        <input type="radio" name="kelas"/>D
-                        <input type="radio" name="kelas"/>E
-                        <input type="radio" name="kelas"/>F
-                        <input type="radio" name="kelas"/>G
-                    </td>
-                </tr>
-                <tr>
-                    <th align="left">Universitas</th>
-                    <td>:</td>
-                    <td><input type="text" name="universitas"</td>
-                </tr>
-                <tr>
-                    <th align="left">Tempat Lahir</th>
-                    <td>:</td>
-                    <td><input type="text" name="tempatlahir"</td>
-                </tr>
-                <tr>
-                    <th align="left">Tanggal Lahir</th>
-                    <td>:</td>
-                    <td><input type="date" name="tanggallahir"</td>
-                </tr>
-                <tr>
-                    <th align="left">Jenis Kelamin</th>
-                    <td>:</td>
-                    <td>
-                        <input type="radio" name="jeniskelamin">Laki-laki
-                        <br>
-                        <input type="radio" name="jeniskelamin">Perempuan
-                    </td>
-                </tr>
-                <tr>
-                    <th align="left"><label>Alamat</label></th>
-                    <td>:</td>
-                    <td><textarea name="alamat"></textarea></td>
-                </tr>
-                <tr>
-                    <th align="left">Telp/No HP</th>
-                    <td>:</td>
-                    <td><input type="text" name="telpnohp"</td>
-                </tr>
-                <tr>
-                    <th align="left">Pas Photo Terbaru</th>
-                    <td>:</td>
-                    <td><input type="file" name="file_photo"/></td>
-                </tr>
-                <tr>
-                    <th align="left">Berkas yang dilampirkan</th>
-                    <td>:</td>
-                    <td>
-                        <input type="checkbox" name="syarat">CV
-                        <br>
-                        <input type="checkbox" name="syarat">ESAI
-                        <br>
-                        <input type="checkbox" name="syarat">FOTO KTM
-                        <br>
-                        <input type="checkbox" name="syarat">PAS FOTO 3x4
-                    </td>
-                </tr>
-                <tr>
-                        <th align="left">Email</th>
-                        <td>:</td>
-                        <td><input type="email" name="email"</td>
-                </tr>
-                <tr>
-                    <th align="left">Difisi yang tersedia</th>
-                    <td>:</td>
-                    <td>
-                        <ol>
-                            <li>Acara</li>
-                            <li>Bendahara</li>
-                            <li>Danus</li>
-                            <li>Ketua</li>
-                            <li>Korlap</li>
-                            <li>Humas</li>
-                            <li>Pubdok</li>
-                            <li>Sekretaris</li>
-                          </ol> 
-                    </td>
-                </tr>
-            </table>
-            <br><legend class="next"><b><input type="submit" name="submit" value="Next"></b></legend><br>
-        </div>
-        </section>
-            <section>
-                <div class="account">
-                <legend><b>CREATE ACCOUNT</b></legend><br>
-                <table>
-                    <tr>
-                        <th align="left">Username</th>
-                        <td>:</td>
-                        <td><input type="text" name="username"</td>
-                    </tr>
-                    <tr>
-                        <th align="left">Password</th>
-                        <td>:</td>
-                        <td><input type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required></td>
-                    </tr>
-                    <tr>
-                        <th align="left">Verifikasi Password</th>
-                        <td>:</td>
-                        <td><input type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required></td>
-                    </tr>
-                    <div id="message">
-                        <h3>Password must contain the following:</h3>
-                        <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
-                        <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
-                        <p id="number" class="invalid">A <b>number</b></p>
-                        <p id="length" class="invalid">Minimum <b>8 characters</b></p>
-                      </div>
-                    <script>
-                        var myInput = document.getElementById("password");
-                        var letter = document.getElementById("letter");
-                        var capital = document.getElementById("capital");
-                        var number = document.getElementById("number");
-                        var length = document.getElementById("length");
-                        myInput.onfocus = function() {
-                        document.getElementById("message").style.display = "block";
-                        }
-                        myInput.onblur = function() {
-                        document.getElementById("message").style.display = "none";
-                        }
-                        myInput.onkeyup = function() {
-                            var lowerCaseLetters = /[a-z]/g;
-                            if(myInput.value.match(lowerCaseLetters)) {  
-                                letter.classList.remove("invalid");
-                                letter.classList.add("valid");
-                            } else {
-                                letter.classList.remove("valid");
-                                letter.classList.add("invalid");
-                            }
-                            var upperCaseLetters = /[A-Z]/g;
-                            if(myInput.value.match(upperCaseLetters)) {  
-                                capital.classList.remove("invalid");
-                                capital.classList.add("valid");
-                            } else {
-                                capital.classList.remove("valid");
-                                capital.classList.add("invalid");
-                            }
-                            var numbers = /[0-9]/g;
-                            if(myInput.value.match(numbers)) {  
-                                number.classList.remove("invalid");
-                                number.classList.add("valid");
-                            } else {
-                                number.classList.remove("valid");
-                                number.classList.add("invalid");
-                            }
-                            if(myInput.value.length >= 8) {
-                                length.classList.remove("invalid");
-                                length.classList.add("valid");
-                            } else {
-                                length.classList.remove("valid");
-                                length.classList.add("invalid");
-                            }
-                        }
-                    </script>
-                </table>
-                <br><legend class="submit"><b><input type="submit" name="submit" value="Submit"></b></legend><br>
-            </div>
-            </section>
-    </form>
-    </body>
-    <footer class="footer">
-        <fieldset disabled>
-        <p>Published: <time datetime="2021-10-10">Oktober 10, 2021</time></p>
-        <p>Author: Diaz Ramadhiani (202031252)</p>
-        </fieldset>
-    </footer>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="Diaz Ramadhiani (202031252)" />
+  <meta name="description" content="Ini Merupakan Halaman Web Diaz Ramadhiani" />
+  <title>Form Pendaftaran Organisasi</title>
+  <link rel="stylesheet" href="styler.css" />
+</head>
+<body>
+  <nav>
+    <a href="/home">Home</a>
+    <a href="/about">About</a>
+    <a href="/kontak">Kontak</a>
+  </nav>
+
+  <form action="" method="post">
+    <section class="biodata">
+      <h2>Form Oprec Organization</h2>
+      <table>
+        <tr>
+          <td><label for="nama">Nama</label></td>
+          <td>:</td>
+          <td><input type="text" id="nama" name="nama" /></td>
+        </tr>
+        <tr>
+          <td><label for="nim">NIM</label></td>
+          <td>:</td>
+          <td><input type="text" id="nim" name="nim" /></td>
+        </tr>
+        <tr>
+          <td><label for="jurusan">Jurusan | Fakultas</label></td>
+          <td>:</td>
+          <td>
+            <select id="jurusan" name="jurusan">
+              <option>Teknik Elektro | FKET</option>
+              <option>Teknik Informatika | FTEN</option>
+              <option>Teknik Mesin | FTBE</option>
+              <option>Teknik Sipil | FTIK</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Kelas</td>
+          <td>:</td>
+          <td>
+            A <input type="radio" name="kelas" value="A" />
+            B <input type="radio" name="kelas" value="B" />
+            C <input type="radio" name="kelas" value="C" /><br />
+            D <input type="radio" name="kelas" value="D" />
+            E <input type="radio" name="kelas" value="E" />
+            F <input type="radio" name="kelas" value="F" />
+            G <input type="radio" name="kelas" value="G" />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="universitas">Universitas</label></td>
+          <td>:</td>
+          <td><input type="text" id="universitas" name="universitas" /></td>
+        </tr>
+        <tr>
+          <td><label for="tempatlahir">Tempat Lahir</label></td>
+          <td>:</td>
+          <td><input type="text" id="tempatlahir" name="tempatlahir" /></td>
+        </tr>
+        <tr>
+          <td><label for="tanggallahir">Tanggal Lahir</label></td>
+          <td>:</td>
+          <td><input type="date" id="tanggallahir" name="tanggallahir" /></td>
+        </tr>
+        <tr>
+          <td>Jenis Kelamin</td>
+          <td>:</td>
+          <td>
+            <input type="radio" name="jeniskelamin" value="Laki-laki" /> Laki-laki <br />
+            <input type="radio" name="jeniskelamin" value="Perempuan" /> Perempuan
+          </td>
+        </tr>
+        <tr>
+          <td><label for="alamat">Alamat</label></td>
+          <td>:</td>
+          <td><textarea id="alamat" name="alamat"></textarea></td>
+        </tr>
+        <tr>
+          <td><label for="telpnohp">Telp/No HP</label></td>
+          <td>:</td>
+          <td><input type="text" id="telpnohp" name="telpnohp" /></td>
+        </tr>
+        <tr>
+          <td><label for="file_photo">Pas Photo Terbaru</label></td>
+          <td>:</td>
+          <td><input type="file" id="file_photo" name="file_photo" /></td>
+        </tr>
+        <tr>
+          <td>Berkas</td>
+          <td>:</td>
+          <td>
+            <input type="checkbox" name="syarat" value="CV" /> CV <br />
+            <input type="checkbox" name="syarat" value="ESAI" /> ESAI <br />
+            <input type="checkbox" name="syarat" value="KTM" /> FOTO KTM <br />
+            <input type="checkbox" name="syarat" value="PAS FOTO" /> PAS FOTO 3x4
+          </td>
+        </tr>
+        <tr>
+          <td><label for="email">Email</label></td>
+          <td>:</td>
+          <td><input type="email" id="email" name="email" /></td>
+        </tr>
+        <tr>
+          <td>Divisi yang Tersedia</td>
+          <td>:</td>
+          <td>
+            <ul>
+              <li>Acara</li>
+              <li>Bendahara</li>
+              <li>Danus</li>
+              <li>Ketua</li>
+              <li>Korlap</li>
+              <li>Humas</li>
+              <li>Pubdok</li>
+              <li>Sekretaris</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+      <div class="next"><input type="submit" value="Next" /></div>
+    </section>
+
+    <section class="account">
+      <h3>Create Account</h3>
+      <table>
+        <tr>
+          <td><label for="username">Username</label></td>
+          <td>:</td>
+          <td><input type="text" id="username" name="username" /></td>
+        </tr>
+        <tr>
+          <td><label for="password">Password</label></td>
+          <td>:</td>
+          <td>
+            <input type="password" id="password" name="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="confirm_password">Verifikasi Password</label></td>
+          <td>:</td>
+          <td>
+            <input type="password" id="confirm_password" name="confirm_password" required />
+          </td>
+        </tr>
+      </table>
+
+      <div id="message">
+        <h4>Password must contain the following:</h4>
+        <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+        <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+        <p id="number" class="invalid">A <b>number</b></p>
+        <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+      </div>
+
+      <div class="submit"><input type="submit" value="Submit" /></div>
+    </section>
+  </form>
+
+  <footer class="footer">
+    <fieldset disabled>
+      <p>Published: <time datetime="2021-10-10">Oktober 10, 2021</time></p>
+      <p>Author: Diaz Ramadhiani (202031252)</p>
+    </fieldset>
+  </footer>
+
+  <script>
+    const myInput = document.getElementById("password");
+    const letter = document.getElementById("letter");
+    const capital = document.getElementById("capital");
+    const number = document.getElementById("number");
+    const length = document.getElementById("length");
+
+    myInput.onfocus = () => document.getElementById("message").style.display = "block";
+    myInput.onblur = () => document.getElementById("message").style.display = "none";
+
+    myInput.onkeyup = function () {
+      letter.classList.toggle("valid", /[a-z]/.test(this.value));
+      letter.classList.toggle("invalid", !/[a-z]/.test(this.value));
+
+      capital.classList.toggle("valid", /[A-Z]/.test(this.value));
+      capital.classList.toggle("invalid", !/[A-Z]/.test(this.value));
+
+      number.classList.toggle("valid", /[0-9]/.test(this.value));
+      number.classList.toggle("invalid", !/[0-9]/.test(this.value));
+
+      length.classList.toggle("valid", this.value.length >= 8);
+      length.classList.toggle("invalid", this.value.length < 8);
+    };
+  </script>
+</body>
 </html>
