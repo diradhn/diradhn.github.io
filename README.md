@@ -1,1 +1,1 @@
-https://diradhn.github.io/Index.html
+https://diradhn.github.io/index.html
